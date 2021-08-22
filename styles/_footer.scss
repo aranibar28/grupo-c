@@ -47,30 +47,41 @@
       }
     }
 
-    input {
-      width: 278px;
-      height: 50px;
-      padding: 10px;
-      border: 1px solid #e0b973;
-      background-color: transparent;
-      color: white;
+    .suscribe {
+      display: flex;
 
-      &:focus {
-        outline: none;
-      }
-
-      &::placeholder {
+      input {
+        width: 278px;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid #e0b973;
+        border-radius: 0;
+        background-color: transparent;
         color: white;
-      }
-    }
 
-    button {
-      width: 80px;
-      height: 50px;
-      background-color: #e0b973;
-      border: 0;
-      color: black;
-      font-size: 1.6rem;
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: white;
+        }
+      }
+
+      button {
+        width: 80px;
+        height: 50px;
+        background-color: #e0b973;
+        border: 0;
+        border-radius: 0;
+        color: black;
+        font-size: 1.6rem;
+        cursor: pointer;
+
+        &:active {
+          box-shadow: 0 0 3px black;
+        }
+      }
     }
   }
 }
@@ -79,7 +90,7 @@
   display: flex;
   justify-content: center;
   div {
-    margin-top: 109px;
+    margin-top: 110px;
     width: 0;
     height: 0;
     border-bottom: 100px solid #14274a;
