@@ -1,0 +1,48 @@
+.facilities{
+
+  text-align: center;
+
+  h2{
+    font-family: map-get($fonts-family, secondary );
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 28px;
+    margin-top: 54px;
+  }
+
+  p{
+    font-size: 2.5rem;
+    line-height: 50px;
+    padding: 20px;
+    margin: 0 180px;
+  }
+
+  figure{
+    width: 1580px;
+    position: relative;
+    margin: 50px 170px 100px;
+
+    img{
+      width: 100%;
+      display: block;
+    }
+
+    .tittle{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h3{
+        padding: 15px;
+        width: 684px;
+        height: 75px;
+        background-color: #fff;
+        font-size: 4.8rem;
+        font-weight: bold;
+        line-height: 100%;
+        position: absolute;
+        bottom: 0px;
+      }
+    }
+  }
+
+}
