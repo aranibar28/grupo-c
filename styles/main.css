@@ -148,10 +148,28 @@ a {
   border-radius: 20px;
 }
 
-.banner {
+.banner .background1 {
   max-width: 1920px;
   height: 1080px;
-  background-image: url("../images/fondo.png"), url("../images/banner.png");
+  background-image: url("../images/fondo.png"), url("../images/banner1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .background2 {
+  max-width: 1920px;
+  height: 1080px;
+  background-image: url("../images/fondo.png"), url("../images/banner2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .background3 {
+  max-width: 1920px;
+  height: 1080px;
+  background-image: url("../images/fondo.png"), url("../images/banner3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -221,7 +239,7 @@ a {
   font-size: 3.6rem;
 }
 
-button {
+.btn {
   width: 268px;
   height: 78px;
   border-radius: 10px;
@@ -235,12 +253,12 @@ button {
   font-weight: bold;
 }
 
-button:active {
+.btn:active {
   -webkit-box-shadow: 0 0 3px black;
           box-shadow: 0 0 3px black;
 }
 
-button i {
+.btn i {
   font-size: 2.5rem;
   margin-right: 20px;
 }
@@ -257,10 +275,10 @@ button i {
 
 .article .container {
   width: 30%;
-  height: 395px;
   padding-left: 48.5px;
+  margin-bottom: 5%;
   border-left: 1px solid #14274A;
-  margin-top: 108px;
+  margin-top: 5%;
   margin-right: 113px;
 }
 
@@ -276,8 +294,160 @@ button i {
   padding-bottom: 30px;
 }
 
-.article .container img {
+.article figure img {
   width: 866px;
   height: 579px;
+  display: block;
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial h2 {
+  font-size: 6rem;
+  padding: 10px;
+}
+
+.testimonial h3 {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.testimonial h4 {
+  font-size: 2.6rem;
+  padding: 10px;
+}
+
+.testimonial div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonial div ul {
+  background-color: #E0B973;
+  color: white;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 0 10px;
+  border-radius: 5px;
+  line-height: 50px;
+}
+
+.footer {
+  height: 280px;
+  background-color: #14274a;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer div div {
+  margin-bottom: 20px;
+}
+
+.footer div div h3 {
+  margin-left: 10px;
+  letter-spacing: 5px;
+}
+
+.footer div h2 {
+  font-family: "EB Garamond";
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.footer div h3 {
+  font-size: 1.175rem;
+}
+
+.footer div h4 {
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+
+.footer div p {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.footer div li {
+  font-size: 1.6rem;
+  line-height: 50px;
+}
+
+.footer div li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer div li a i {
+  margin-right: 20px;
+}
+
+.footer div input {
+  width: 278px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #e0b973;
+  background-color: transparent;
+  color: white;
+}
+
+.footer div input:focus {
+  outline: none;
+}
+
+.footer div input::-webkit-input-placeholder {
+  color: white;
+}
+
+.footer div input:-ms-input-placeholder {
+  color: white;
+}
+
+.footer div input::-ms-input-placeholder {
+  color: white;
+}
+
+.footer div input::placeholder {
+  color: white;
+}
+
+.footer div button {
+  width: 80px;
+  height: 50px;
+  background-color: #e0b973;
+  border: 0;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.triangle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.triangle div {
+  margin-top: 109px;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #14274a;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
 }
 /*# sourceMappingURL=main.css.map */
