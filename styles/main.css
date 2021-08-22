@@ -77,7 +77,6 @@ a {
   font-family: "EB Garamond";
   background-color: #e0b973;
   padding: 50px;
-  margin-left: 10%;
   border-radius: 0 0 50px 50px;
   color: #14274a;
   font-weight: bold;
@@ -101,18 +100,18 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .navegation .nav {
+  padding: 50px;
 }
 
 .header .navegation .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header .navegation .nav li {
@@ -131,7 +130,7 @@ a {
 }
 
 .header .navegation .nav a:hover {
-  color: #14274A;
+  color: #14274a;
 }
 
 .header .navegation .nav li.is-active a {
@@ -148,6 +147,12 @@ a {
   height: 4px;
   background-color: #ffffff;
   border-radius: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 1260px) {
+  .header .logo {
+    display: none;
+  }
 }
 
 .banner .background-1 {
@@ -302,6 +307,12 @@ a {
   width: 866px;
   height: 579px;
   display: block;
+}
+
+@media (min-width: 0px) and (max-width: 1560px) {
+  .article .container {
+    width: 80%;
+  }
 }
 
 .testimonial {
@@ -489,9 +500,15 @@ a {
 }
 
 .facilities figure {
-  width: 1580px;
   position: relative;
   margin: 50px 170px 100px;
+}
+
+.facilities figure .degraded {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../images/facilities/rectangule.png");
 }
 
 .facilities figure img {

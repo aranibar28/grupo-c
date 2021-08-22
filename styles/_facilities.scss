@@ -18,9 +18,16 @@
   }
 
   figure{
-    width: 1580px;
+
     position: relative;
     margin: 50px 170px 100px;
+
+    .degraded{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-image: url("../images/facilities/rectangule.png");
+    }
 
     img{
       width: 100%;

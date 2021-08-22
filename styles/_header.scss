@@ -3,7 +3,6 @@
     font-family: map-get($fonts-family, secondary);
     background-color: #e0b973;
     padding: 50px;
-    margin-left: 10%;
     border-radius: 0 0 50px 50px;
     color: #14274a;
     font-weight: bold;
@@ -22,12 +21,13 @@
   .navegation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+
 
     .nav {
+      padding: 50px;
       ul {
         display: flex;
-        align-items: center;
       }
 
       li {
@@ -44,7 +44,7 @@
         color: #ffffff;
 
         &:hover {
-          color: #14274A;
+          color: #14274a;
         }
       }
 
@@ -65,6 +65,12 @@
           border-radius: 20px;
         }
       }
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 1260px) {
+    .logo {
+      display: none;
     }
   }
 }
