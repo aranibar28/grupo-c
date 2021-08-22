@@ -1,2 +1,2 @@
-# grupo-c
+# GRUPO C - FRONTEND
 Hotel Website Design
