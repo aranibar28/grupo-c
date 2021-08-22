@@ -58,8 +58,9 @@ html {
 }
 
 body {
-  font-size: 1.2rem;
-  font-family: "Roboto";
+  font-size: 2.5rem;
+  font-family: "Montserrat";
+  color: #14274A;
 }
 
 a {
@@ -67,8 +68,216 @@ a {
 }
 
 .wrapper {
-  max-width: 960px;
+  max-width: 1920px;
   margin: auto;
-  background-color: azure;
+}
+
+.header .logo {
+  font-family: "EB Garamond";
+  background-color: #e0b973;
+  padding: 50px;
+  margin-left: 10%;
+  border-radius: 0 0 50px 50px;
+  color: #14274a;
+  font-weight: bold;
+}
+
+.header .logo h2 {
+  font-size: 4rem;
+}
+
+.header .logo h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
+.header .navegation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navegation .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navegation .nav li {
+  position: relative;
+}
+
+.header .navegation .nav li:first-child {
+  margin-left: 0;
+}
+
+.header .navegation .nav a {
+  padding: 50px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #ffffff;
+}
+
+.header .navegation .nav a:hover {
+  color: #14274A;
+}
+
+.header .navegation .nav li.is-active a {
+  color: #ffffff;
+  cursor: default;
+}
+
+.header .navegation .nav li.is-active::after {
+  content: "";
+  position: absolute;
+  left: 26%;
+  bottom: -10px;
+  width: 50%;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.banner {
+  max-width: 1920px;
+  height: 1080px;
+  background-image: url("../images/fondo.png"), url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .banner-container {
+  color: white;
+}
+
+.banner .banner-container .banner-description {
+  margin: 93px 113px 0 113px;
+  padding: 100px;
+}
+
+.banner .banner-container .banner-description h1 {
+  font-family: "EB Garamond";
+  font-size: 15.4rem;
+  font-weight: bold;
+}
+
+.banner .banner-container .banner-description h2 {
+  font-size: 5rem;
+}
+
+.banner .banner-container .banner-description h3 {
+  font-size: 5rem;
+  font-family: "EB Garamond";
+  font-weight: bold;
+  letter-spacing: 20px;
+}
+
+.banner .banner-container .banner-description p {
+  width: 500px;
+  font-size: 2.5rem;
+  line-height: 3.48rem;
+}
+
+.banner .banner-container .banner-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .banner-container .banner-items h3 {
+  margin-top: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+.banner .banner-container .banner-items .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 6rem;
+  cursor: pointer;
+}
+
+.room-types h2 {
+  padding: 83px;
+  text-align: center;
+  font-size: 3.6rem;
+}
+
+button {
+  width: 268px;
+  height: 78px;
+  border-radius: 10px;
+  border: 0;
+  padding: 10px;
+  font-size: 2.5rem;
+  background: #e0b973;
+  color: white;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+button:active {
+  -webkit-box-shadow: 0 0 3px black;
+          box-shadow: 0 0 3px black;
+}
+
+button i {
+  font-size: 2.5rem;
+  margin-right: 20px;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 69px;
+}
+
+.article .container {
+  width: 30%;
+  height: 395px;
+  padding-left: 48.5px;
+  border-left: 1px solid #14274A;
+  margin-top: 108px;
+  margin-right: 113px;
+}
+
+.article .container h2 {
+  font-family: "EB Garamond";
+  font-size: 6rem;
+  padding-bottom: 19px;
+}
+
+.article .container p {
+  font-size: 2.5rem;
+  line-height: 40px;
+  padding-bottom: 30px;
+}
+
+.article .container img {
+  width: 866px;
+  height: 579px;
 }
 /*# sourceMappingURL=main.css.map */
