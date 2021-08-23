@@ -161,9 +161,9 @@ a {
 .header .banner .navegation .nav li.is-active::after {
   content: "";
   position: absolute;
-  left: 18.5%;
+  left: 21%;
   bottom: -10px;
-  width: 65%;
+  width: 60%;
   height: 4px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -799,6 +799,173 @@ a {
   }
   .room figure .room-items .btn {
     font-size: 1.2rem;
+  }
+}
+
+.contact {
+  background-color: #14274a;
+  height: 465px;
+}
+
+.contact .banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .banner-container h1 {
+  padding: 50px;
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .contact {
+    height: 280px;
+  }
+  .contact .banner-container h1 {
+    font-size: 3rem;
+  }
+}
+
+.contact-container {
+  margin-top: 261px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.contact-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-container h2 {
+  font-family: "EB Garamond";
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.contact-container h3 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.contact-container h4 {
+  font-size: 4rem;
+  line-height: 40px;
+  padding: 10px 0 10px;
+}
+
+.contact-container p {
+  font-size: 3rem;
+  margin-bottom: 150px;
+  line-height: 60px;
+}
+
+.contact-container .container-left {
+  width: 50%;
+}
+
+.contact-container .container-right {
+  width: 570px;
+}
+
+.contact-container .container-right input {
+  width: 570px;
+  padding: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #14274a;
+}
+
+.contact-container .container-right input:focus {
+  outline: none;
+}
+
+.contact-container .container-right textarea {
+  width: 570px;
+  height: 342px;
+  padding: 20px;
+  font-size: 2.5rem;
+  color: #14274a;
+  margin-bottom: 52px;
+}
+
+.contact-container .container-right textarea:focus {
+  outline: none;
+}
+
+.contact-container .container-right .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .contact-container {
+    text-align: center;
+    margin: 10px;
+  }
+  .contact-container h2 {
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+  .contact-container p {
+    font-size: 1.5rem;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .contact-container h3 {
+    display: none;
+  }
+  .contact-container h3,
+  .contact-container h4 {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .contact-container .container-left,
+  .contact-container .container-right {
+    width: 100%;
+  }
+  .contact-container .container-left {
+    padding: 50px;
+  }
+  .contact-container .container-left h4 {
+    font-size: 1.5rem;
+    line-height: 20px;
+  }
+  .contact-container .container-right input,
+  .contact-container .container-right textarea {
+    width: 100%;
+  }
+  .contact-container .container-right input {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .contact-container .container-right textarea {
+    height: 150px;
+    margin-bottom: 25px;
+  }
+  .contact-container .container-right .item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
