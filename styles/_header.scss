@@ -94,7 +94,7 @@
     .banner-container {
       color: white;
       .banner-description {
-        margin: 93px 113px 0 113px;
+        margin: 93px 113px 50px 113px;
         padding: 100px;
 
         h1 {
@@ -125,6 +125,7 @@
         justify-content: center;
 
         h3 {
+          font-size: 2.5rem;
           margin-top: 30px;
           padding: 15px;
           text-align: center;
