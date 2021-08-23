@@ -58,7 +58,7 @@ html {
 }
 
 body {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   font-family: "Montserrat";
   color: #14274A;
 }
@@ -73,27 +73,29 @@ a {
   margin: auto;
 }
 
-.header .logo {
-  font-family: "EB Garamond";
-  background-color: #e0b973;
-  padding: 50px;
-  border-radius: 0 0 50px 50px;
-  color: #14274a;
-  font-weight: bold;
-  cursor: pointer;
+.header .background-1,
+.header .background-2,
+.header .background-3 {
+  max-width: 1920px;
+  height: 1080px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.header .logo h2 {
-  font-size: 4rem;
+.header .background-1 {
+  background-image: url("../images/fondo.png"), url("../images/banner-1.png");
 }
 
-.header .logo h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  letter-spacing: 10px;
+.header .background-2 {
+  background-image: url("../images/fondo.png"), url("../images/banner-2.png");
 }
 
-.header .navegation {
+.header .background-3 {
+  background-image: url("../images/fondo.png"), url("../images/banner-3.png");
+}
+
+.header .banner .navegation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,117 +106,102 @@ a {
       justify-content: space-around;
 }
 
-.header .navegation .nav {
-  padding: 50px;
+.header .banner .navegation .logo {
+  font-family: "EB Garamond";
+  background-color: #e0b973;
+  padding: 45px;
+  border-radius: 0 0 50px 50px;
+  color: #14274a;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.header .navegation .nav ul {
+.header .banner .navegation .logo h2 {
+  font-size: 4rem;
+}
+
+.header .banner .navegation .logo h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
+.header .banner .navegation .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px;
 }
 
-.header .navegation .nav li {
+.header .banner .navegation .nav li {
   position: relative;
 }
 
-.header .navegation .nav li:first-child {
+.header .banner .navegation .nav li:first-child {
   margin-left: 0;
 }
 
-.header .navegation .nav a {
-  padding: 50px;
+.header .banner .navegation .nav a {
+  font-size: 2.5rem;
+  padding: 20px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  color: #ffffff;
+  color: white;
 }
 
-.header .navegation .nav a:hover {
+.header .banner .navegation .nav a:hover {
   color: #14274a;
 }
 
-.header .navegation .nav li.is-active a {
+.header .banner .navegation .nav li.is-active a {
   color: #ffffff;
   cursor: default;
 }
 
-.header .navegation .nav li.is-active::after {
+.header .banner .navegation .nav li.is-active::after {
   content: "";
   position: absolute;
-  left: 26%;
+  left: 18.5%;
   bottom: -10px;
-  width: 50%;
+  width: 65%;
   height: 4px;
   background-color: #ffffff;
   border-radius: 20px;
 }
 
-@media (min-width: 0px) and (max-width: 1260px) {
-  .header .logo {
-    display: none;
-  }
-}
-
-.banner .background-1 {
-  max-width: 1920px;
-  height: 1080px;
-  background-image: url("../images/fondo.png"), url("../images/banner1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.banner .background-2 {
-  max-width: 1920px;
-  height: 1080px;
-  background-image: url("../images/fondo.png"), url("../images/banner2.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.banner .background-3 {
-  max-width: 1920px;
-  height: 1080px;
-  background-image: url("../images/fondo.png"), url("../images/banner3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.banner .banner-container {
+.header .banner .banner-container {
   color: white;
 }
 
-.banner .banner-container .banner-description {
+.header .banner .banner-container .banner-description {
   margin: 93px 113px 0 113px;
   padding: 100px;
 }
 
-.banner .banner-container .banner-description h1 {
+.header .banner .banner-container .banner-description h1 {
   font-family: "EB Garamond";
   font-size: 15.4rem;
   font-weight: bold;
 }
 
-.banner .banner-container .banner-description h2 {
+.header .banner .banner-container .banner-description h2 {
   font-size: 5rem;
 }
 
-.banner .banner-container .banner-description h3 {
+.header .banner .banner-container .banner-description h3 {
   font-size: 5rem;
   font-family: "EB Garamond";
   font-weight: bold;
   letter-spacing: 20px;
 }
 
-.banner .banner-container .banner-description p {
+.header .banner .banner-container .banner-description p {
   width: 500px;
   font-size: 2.5rem;
   line-height: 3.48rem;
 }
 
-.banner .banner-container .banner-items {
+.header .banner .banner-container .banner-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,13 +210,13 @@ a {
           justify-content: center;
 }
 
-.banner .banner-container .banner-items h3 {
+.header .banner .banner-container .banner-items h3 {
   margin-top: 30px;
   padding: 15px;
   text-align: center;
 }
 
-.banner .banner-container .banner-items .icon {
+.header .banner .banner-container .banner-items .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,10 +227,60 @@ a {
   cursor: pointer;
 }
 
-.room-types h2 {
-  padding: 83px;
+@media (min-width: 0px) and (max-width: 960px) {
+  .header .background-1,
+  .header .background-2,
+  .header .background-3 {
+    max-width: 1920px;
+    height: 580px;
+  }
+  .header .logo {
+    display: none;
+  }
+  .header .banner .navegation .nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header .banner .navegation .nav a {
+    font-size: 1.5rem;
+  }
+  .header .banner .banner-container .banner-description {
+    text-align: center;
+    margin: 0;
+    padding: 20px 10%;
+  }
+  .header .banner .banner-container .banner-description h1 {
+    font-size: 7rem;
+  }
+  .header .banner .banner-container .banner-description h2 {
+    font-size: 2.5rem;
+  }
+  .header .banner .banner-container .banner-description h3 {
+    font-size: 2.5rem;
+  }
+  .header .banner .banner-container .banner-description p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .header .banner .banner-container .banner-items {
+    padding: 50px;
+  }
+  .header .banner .banner-container .banner-items .icon {
+    font-size: 3rem;
+  }
+}
+
+.extra h2 {
+  padding: 80px;
   text-align: center;
   font-size: 3.6rem;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .extra h2 {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
 }
 
 .btn {
@@ -270,6 +307,18 @@ a {
   margin-right: 20px;
 }
 
+@media (min-width: 0px) and (max-width: 960px) {
+  .btn {
+    width: 130px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  .btn i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+}
+
 .article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,7 +333,7 @@ a {
 
 .article .container {
   width: 30%;
-  border-left: 1px solid #14274A;
+  border-left: 1px solid #14274a;
   padding-left: 48.5px;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -304,14 +353,30 @@ a {
 }
 
 .article figure img {
-  width: 866px;
-  height: 579px;
+  width: 100%;
   display: block;
 }
 
 @media (min-width: 0px) and (max-width: 1560px) {
+  .article {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
   .article .container {
     width: 80%;
+    text-align: center;
+    border-left: 0;
+    padding-left: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 0;
+  }
+  .article .container h2 {
+    font-size: 3rem;
+  }
+  .article .container p {
+    font-size: 1.2rem;
+    line-height: 20px;
   }
 }
 
@@ -353,13 +418,35 @@ a {
   line-height: 50px;
 }
 
+@media (min-width: 0px) and (max-width: 960px) {
+  .testimonial h2 {
+    font-size: 3rem;
+  }
+  .testimonial h3 {
+    font-size: 1.5rem;
+  }
+  .testimonial h4 {
+    font-size: 1.4rem;
+  }
+  .testimonial div a {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+    line-height: 25px;
+  }
+}
+
 .footer {
-  height: 280px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #14274a;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -387,6 +474,7 @@ a {
 }
 
 .footer div h4 {
+  margin-top: 30px;
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
@@ -462,6 +550,37 @@ a {
           box-shadow: 0 0 3px black;
 }
 
+@media (min-width: 0px) and (max-width: 960px) {
+  .footer {
+    text-align: center;
+  }
+  .footer div {
+    padding: 10px;
+  }
+  .footer .footer-a {
+    width: 100%;
+  }
+  .footer .footer-a p {
+    margin-bottom: 5px;
+  }
+  .footer .footer-b, .footer .footer-c {
+    width: 100%;
+  }
+  .footer .footer-b ul, .footer .footer-c ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer .footer-b ul li, .footer .footer-c ul li {
+    font-size: 1.2rem;
+  }
+  .footer .footer-b ul li a i, .footer .footer-c ul li a i {
+    margin-right: 5px;
+  }
+}
+
 .triangle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,6 +597,15 @@ a {
   border-bottom: 100px solid #14274a;
   border-left: 120px solid transparent;
   border-right: 120px solid transparent;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .triangle div {
+    margin-top: 55px;
+    border-bottom: 50px solid #14274a;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+  }
 }
 
 .facilities {
@@ -537,6 +665,33 @@ a {
   font-weight: bold;
   line-height: 100%;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .facilities {
+    padding: 25px;
+  }
+  .facilities h2 {
+    font-size: 3rem;
+    padding: 0;
+    margin-top: 0;
+  }
+  .facilities p {
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding: 0;
+    margin: 0;
+  }
+  .facilities figure {
+    position: relative;
+    margin: 20px 0 20px;
+  }
+  .facilities figure .tittle h3 {
+    padding: 8px;
+    width: 50%;
+    height: 35px;
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
